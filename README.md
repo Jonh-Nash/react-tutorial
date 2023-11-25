@@ -1,6 +1,7 @@
-## 概要
-[Reactの三目並べを作るチュートリアル] (https://ja.react.dev/learn/tutorial-tic-tac-toe)をTypeScriptで書く。
+## Tutorial: Tic-Tac-Toe with TypeScript
 
-## 使い方
-VSCodeのdevcontainerで開き、`http://localhost:3000/` をブラウザで開く
+* https://react.dev/learn/tutorial-tic-tac-toe
+
+## How to use
+Open this code in a VSCode devcontainer and open `http://localhost:3000/` in a browser.
 
