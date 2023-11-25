@@ -1,7 +1,25 @@
 import React from "react";
 
-const Square: React.FC = () => {
-  return <button className="square">XXX</button>;
+const Board: React.FC = () => {
+  return (
+    <>
+      <div className="board-row">
+        <button className="square">X</button>
+        <button className="square">X</button>
+        <button className="square">X</button>
+      </div>
+      <div className="board-row">
+        <button className="square">X</button>
+        <button className="square">X</button>
+        <button className="square">X</button>
+      </div>
+      <div className="board-row">
+        <button className="square">X</button>
+        <button className="square">X</button>
+        <button className="square">X</button>
+      </div>
+    </>
+  )
 };
 
-export default Square;
+export default Board;
