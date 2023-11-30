@@ -1,15 +1,13 @@
-import { useState } from 'react';
+interface SquareProps {
+    value: string;
+    onSquareClick: () => void;
+}
 
-const Square: React.FC = () => {
-    const [value, setValue] = useState<null | string>(null);
-
-    const handleClick = () => {
-        setValue('X');
-    }
+const Square: React.FC<SquareProps> = ({ value, onSquareClick}) => {
     return (
         <button 
             className="square"
-            onClick={handleClick}
+            onClick={onSquareClick}
         >
             {value}
         </button>
