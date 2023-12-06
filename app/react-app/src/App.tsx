@@ -6,7 +6,7 @@ const Board: React.FC = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
 
   const handleClick = (i: number) => {
-    if (squares[i] || calculateWinner(squares)) return;
+    if (squares[i] || calculateWinner()) return;
     const nextSquares = squares.slice();
     if (xIsNext) {
       nextSquares[i] = 'X';
@@ -17,7 +17,7 @@ const Board: React.FC = () => {
     setXIsNext(!xIsNext);
   }
 
-  const calculateWinner = (squares: string[]) => {
+  const calculateWinner = () => {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -43,7 +43,7 @@ const Board: React.FC = () => {
     return null;
   }
 
-  const winner = calculateWinner(squares);
+  const winner = calculateWinner();
   let status;
   if (winner) {
     status = "Winner: " + winner;
